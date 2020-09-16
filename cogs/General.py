@@ -23,7 +23,8 @@ class General(commands.Cog):
 			return
 		voice_name = ctx.message.author.voice.channel.name
 		quantity = 10 - len(voice.channel.members)
-		
+		code = code.upper()
+		server = server.upper()
 		title = ':white_check_mark: Room is available:'
 		description = f'{code} Server {server} | Channel {voice_name} | Places {quantity}'
 		e = discord.Embed(title=title, type="rich", description=description, colour=discord.Colour(0x09c49c))
