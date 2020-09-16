@@ -40,7 +40,7 @@ class General(commands.Cog):
 	async def honor(self, ctx):
 		honor_list = ["Pía 'muchotexto'", "Javier 'koga'", "Brayan 'ArAmIx'", "Kevin 'rojo'", "Catalina 'catasinbri'"]
 		title = "Hall of Honor"
-		description = ":love: Honorific people of the server"
+		description = ":heart: Honorific people of the server"
 		await self.print_list(ctx, honor_list, title, description)
 
 def setup(bot):
