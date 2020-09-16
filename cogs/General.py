@@ -18,7 +18,7 @@ class General(commands.Cog):
 	async def room(self, ctx, code, server):
 		voice = ctx.message.author.voice
 		if voice == None:
-			e = discord.Embed(description=f':x: You must to be in a Voice Channel \n', colour=discord.Colour(0xcc1818))
+			e = discord.Embed(description=f':x: You have to be connected to a voice channel before you can use this command!', colour=discord.Colour(0xcc1818))
 			await ctx.send('', embed=e)
 			return
 		voice_name = ctx.message.author.voice.channel.name
