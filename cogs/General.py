@@ -34,13 +34,14 @@ class General(commands.Cog):
 		cancel_list = ["Javier 'koga'", "Brayan 'L'", "Bastian 'Basti'", "Catalina 'catasinbri'", "Melanie 'melanie'"]
 		title = "Best Impostors of the Week"
 		description = ":fire: Congrats y'all"
-		self.print_list(ctx, cancel_list, title, description)
+		await self.print_list(ctx, cancel_list, title, description)
 	
 	@commands.command(name="honor", help="Usage: $honor -> Print honorific people of this server")
 	async def honor(self, ctx):
 		honor_list = ["Pía 'muchotexto'", "Javier 'koga'", "Brayan 'ArAmIx'", "Kevin 'rojo'", "Catalina 'catasinbri'"]
 		title = "Hall of Honor"
 		description = ":love: Honorific people of the server"
-		self.print_list(ctx, honor_list, title, description)
+		await self.print_list(ctx, honor_list, title, description)
+
 def setup(bot):
 	bot.add_cog(General(bot))
